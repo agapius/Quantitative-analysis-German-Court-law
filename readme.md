@@ -1,8 +1,8 @@
 1. Access BGH-Database and download every decision
--find download link
--find decision name
--download decision and automatically name it right
--Create decent folder structure for court and date
+1.1 find download link
+1.2 find decision name
+1.3 download decision and automatically name it right
+1.4 Create decent folder structure for court and date
 
 
 2. Convert PDF to XML/TXT/JSON
