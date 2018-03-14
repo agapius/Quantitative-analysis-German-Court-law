@@ -28,14 +28,14 @@ year= 2000
 now = datetime.datetime.now()
 print now.year
 
-page=0
-nofpages=get_number_of_pages(year)
+
 
 url_year="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/list.py?Gericht=bgh&Art=en&Datum="
 list_of_year_page_url= []
 ###loop through all years until now and concatenate a relevant link with the year_url
 while year <= now.year:
-	url_year="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/list.py?Gericht=bgh&Art=en&Datum="+year
+	url_year="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/list.py?Gericht=bgh&Art=en&Datum="+str(year)
+	page=0
 	nofpages=get_number_of_pages(url_year)
 	while page <= nofpages:
 		url_year_pages= url_year+"&Seite="+page
