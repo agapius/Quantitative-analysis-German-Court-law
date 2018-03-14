@@ -27,6 +27,18 @@ def get_calender_years(start):
 
 	print(calender_clean[0])
 
+#creates a dictionary with the links to the landing page of the current year
+#bare_url is the url, but without the year in the end, cal is needed, b/c calender_clean ist not normally accessible?
+	cal = ['2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '2009', '2008', '2007', '2006', '2005', '2004', '2003', '2002', '2001', '2000']
+	bare_url = 'http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/list.py?Gericht=bgh&Art=en&Datum=' 
+#year_dic the a dictionary. the key is the respective year, with it one can access the different landing pages
+	year_dic = {}
+
+	for year in cal:
+		year_dic[str(year)] = bare_url + str(year)
+
+	print year_dic
+
 
 
 ##give it an overview page and it returns the number of pages
