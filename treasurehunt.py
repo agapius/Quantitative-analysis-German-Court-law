@@ -15,9 +15,8 @@ def get_number_of_pages(start):
 	r_start = b_start.html.thead.tr
 ###find all page links on the last page (the last page link on the last page is the 'pre-last-page')
 	pages = r_start.findAll('a',{"class": "pagelink"})
-###pages is a list of tags. the for-loop iterates trough the tags, converts them to a string, and then returns a number, which is the page of the previous pages
+###pages[-1] gets us the number of the pre-last page. Convert this to an int to do then math with it (+1)
 	Nofpages= int(pages[-1].get_text(strip=True))+1
-	print Nofpages
 	return Nofpages
 
 #Outer loop that goes through the Years
