@@ -1,6 +1,12 @@
 ### Access BGH-Database and download every decision
-1. Find download link
-2. Find decision name
+1. Get Years (for loop)
+2. Get pages (for loop)
+3. Get EAz (for loop)
+	 * Get date, Aktenzeichen and downloadlink
+	 * Get Court from the other loop/ (!get court from Aktenzeichen!)
+	 * download
+
+
 3. Download decision and automatically name it right
 4. Create decent folder structure for court and date
 
