@@ -36,12 +36,15 @@ list_of_year_page_url= []
 ###loop through all years until now and concatenate a relevant link with the year_url
 while year <= now.year:
 	url_year="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/list.py?Gericht=bgh&Art=en&Datum="+year
+	nofpages=get_number_of_pages(url_year)
 	while page <= nofpages:
 		url_year_pages= url_year+"&Seite="+page
 		list_of_year_page_url.append(url_year)
 		page += 1
 	year += 1
-###result is a list of all urls to the years from 2000-2018	and all there pages
-print list_of_year_page_url
+###result is a list of all the pages in every year from 2000-2018
+
+for url in list_of_year_page_url:
+	print url
 
 ##loop through the urls is outmost loop
