@@ -35,15 +35,63 @@ def get_number_of_pages(start):
 	l_start = urllib2.urlopen(start).read()
 	b_start = BeautifulSoup(l_start, 'html.parser')
 	r_start = b_start.html.thead.tr
-
 #find all page links on the last page (the last page link on the last page is the 'pre-last-page')
 	pages = r_start.findAll('a',{"class": "pagelink"})
-
 #pages[-1] gets us the number of the pre-last page. Convert this to an int to do then math with it (+1)
 	Nofpages= int(pages[-1].get_text(strip=True))+1
 	print(Nofpages)
 
 
 
-get_number_of_pages(cray)
-get_calender_years(cray)
+##get all the downloadlinks to the Urteile and download all of them
+def get_links_to_urteil(start):
+	l_start = urllib2.urlopen(start).read()
+	b_start = BeautifulSoup(l_start, 'html.parser')
+	r_start = b_start.html.body
+#find all download links to the Urteile
+#would be nice to create a list of tuples with (senat,date,AKz,link)
+#i'll make lists of all 4 variables and then I'll put them all together in a list as tuples
+
+#senate
+	senate = r_start.findAll('td',{"class":"ESpruchk"})
+	senate_clean= []
+	for s in senate:
+		s= s.get_text(strip=True)
+		print(s)
+		senate_clean.append(s)
+	print(senate_clean)
+
+#date
+	date = r_start.findAll('td',{"class":"EDatum"})
+	
+#downloadlinks and AkZ	
+	downloadlinks = r_start.findAll('td',{"class":"EAz"})
+
+#hier in dieser call bekomme ich die direktdownloadlinks sowie die 
+#the first part of the link is always the same
+	link_to_urteil1= 'http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/'
+
+	for d in downloadlinks:
+		
+		new= d.findAll('a', href=True)[1]
+		link_to_urteil2= (new['href']) #da bekomme ich den link also die URL
+		link_to_urteil=link_to_urteil1+link_to_urteil2
+		print(link_to_urteil)
+		
+		aktenzeichen=(d.get_text(strip=True)) #da bekomme ich das Aktenzeichen
+		print(aktenzeichen)
+
+#sobald ich die inks habe, kann ich hier easy downloaden
+'''	#f=open link to download
+	f = urllib2.urlopen(bgh_pdf)
+	with open("urteil.pdf", "wb") as code:
+		code.write(f.read())'''
+
+
+calyear = get_calender_years(cray)
+nofpages = get_number_of_pages(cray)
+get_links_to_urteil(cray)
+#make a for loop for all calyears and in each calyear for all pages
+
+
+
