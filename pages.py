@@ -63,7 +63,11 @@ def get_links_to_urteil(start):
 
 #date
 	date = r_start.findAll('td',{"class":"EDatum"})
-	
+	date_clean=[]
+	for d in date:
+		date_clean.append(d.get_text(strip=True).encode('utf-8'))
+	print(date_clean)
+
 #downloadlinks and AkZ	
 	downloadlinks = r_start.findAll('td',{"class":"EAz"})
 
