@@ -15,9 +15,10 @@ def get_number_of_pages(start):
 	r_start = b_start.html.thead.tr
 ###find all page links on the last page (the last page link on the last page is the 'pre-last-page')
 	pages = r_start.findAll('a',{"class": "pagelink"})
-###pages[-1] gets us the number of the pre-last page. Convert this to an int to do then math with it (+1)
+###pages is a list of tags. the for-loop iterates trough the tags, converts them to a string, and then returns a number, which is the page of the previous pages
 	Nofpages= int(pages[-1].get_text(strip=True))+1
-	print(Nofpages)
+	print Nofpages
+	return Nofpages
 
 #Outer loop that goes through the Years
 
@@ -36,10 +37,10 @@ list_of_year_page_url= []
 while year <= now.year:
 	url_year="http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/list.py?Gericht=bgh&Art=en&Datum="+str(year)
 	page=0
-	nofpages=get_number_of_pages(url_year)
+	nofpages=get_number_of_pages(url_year+'&Seite=100')
 	while page <= nofpages:
-		url_year_pages= url_year+"&Seite="+page
-		list_of_year_page_url.append(url_year)
+		url_year_pages= url_year+"&Seite="+str(page)
+		list_of_year_page_url.append(url_year_pages)
 		page += 1
 	year += 1
 ###result is a list of all the pages in every year from 2000-2018
@@ -48,3 +49,4 @@ for url in list_of_year_page_url:
 	print url
 
 ##loop through the urls is outmost loop
+
