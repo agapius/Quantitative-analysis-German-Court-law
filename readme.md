@@ -35,7 +35,7 @@
 	* medium that is cited
 	* gives us the e.g. possibility to query all JSon BGH and give us a dictionary with the people cited and the numer of citations
 
-### Store the documents in the JSon Format in a datbase (Computer/Database: MongoDB,...)
+### Store the documents in the JSon Format in a database (Computer/Database: MongoDB,...)
 1. MongoDB seems like a pretty good option.
 2. MongoDB has been recommended to me
 3. Other options could be considered
