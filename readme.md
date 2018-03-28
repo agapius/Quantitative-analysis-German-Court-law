@@ -5,18 +5,26 @@
 	 * Get date, Aktenzeichen and downloadlink
 	 * Get Court from the other loop/ (!get court from Aktenzeichen!)
 	 * download
+4. Get vorinstanzliches Urteil
 
 
 3. Download decision and automatically name it right
 4. Create decent folder structure for court and date
 
-### Convert PDF to XML/TXT/JSON
+### Decide XML/TXT/JSON
 1. TXT: Plain, simple but no tagging whatsoever. Thus no quick querying over parts of the documents
 	* E.g. find all Urteile that cite Faust
 2. XML: Super loaded, complicated a little overkill
 3. JSon: Straight forward, super easily queried with Python
 	* gives out pretty lean dictionary format
 	* Recommended by some people I know
+
+### Convert PDF to JSON
+1. Convert PDF to plain Text (less keeps formatting) and then to JSON and then tag the parts
+	* What sections need to be tagged?
+	* Vorinstanz, beteiligte Richter, wenn vorhanden auch einzelne Zitate
+	* Wie taggen? regex using the formatting? Using key phrases
+2. Find a solution to diectly convert to JSON and get it tagged automtically?
 
 ### Analyze the document and tag it (basically make a eaningful JSon File)
 1. Name Tag
