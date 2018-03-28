@@ -27,7 +27,6 @@ def get_number_of_pages(start):
 	return Nofpages
 
 
-
 ##get a list of years that we can loop throuh:
 ###set first year
 year= 2000
@@ -54,14 +53,15 @@ while year <= now.year:
 for url in list_of_year_page_url:
 	p = urllib.request.urlopen(url)
 	soup = BeautifulSoup(p, 'html.parser')
-# ab enthält alle download-links, die nicht direkt zum pdf doc führen, wenn '&Blank=1.pdf' angefügt wird, führt die der link direkt zum pdf
+# ab enthält alle download-links, die nicht direkt zum pdf doc führen, wenn '&Blank=1.pdf' angefügt wird, führt dieser link direkt zum pdf
 	for a in soup.find_all('a', href=True):
 		ab = str(a['href']) # the link-part of the a-tag is converted to string
 		if 'document' in ab and '.pdf' not in ab:	# there are more links than wanted (e.g to previous or next page).all relevant links start with document and do not end with .pdf (since we want to extract the name first)
-			bgh_pdf = 'http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/' + ab
+			bgh_pdf = h'ttp://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/' + ab
 			name = urllib.request.urlopen(bgh_pdf)
 			soup_name = BeautifulSoup(name, 'html.parser')
-			name_box = remove_non_ascii_1(soup_name.title.string)    # funktioniert nur in 70% der Fälle, dann bringt es aber den richtigen Namen raus
+			
+			name_box = soup_name.title.string    #I left out the remove_non_ascii because I found that this gives me cleaner results in py3
 
 			bgh_pdf_link = bgh_pdf +'&Blank=1.pdf'
 			f = urllib.request.urlopen(bgh_pdf_link) 
