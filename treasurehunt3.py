@@ -13,6 +13,10 @@ def remove_non_ascii_1(text):
 	new_string = ''.join(i for i in text if ord(i)<128)
 	new_string = new_string.replace('.', ' ')
 	return new_string.replace('/', ' ')
+# removes backslash, so text can be a filename
+def remove_backslash(text):
+	return text.replace('/', ' ')
+
 
 ##give it an overview page and it returns the number of pages
 def get_number_of_pages(start):
@@ -27,7 +31,7 @@ def get_number_of_pages(start):
 	return Nofpages
 
 
-##get a list of years that we can loop throuh:
+##get a list of years that we can loop through:
 ###set first year
 year= 2000
 now = datetime.datetime.now()
@@ -57,7 +61,7 @@ for url in list_of_year_page_url:
 	for a in soup.find_all('a', href=True):
 		ab = str(a['href']) # the link-part of the a-tag is converted to string
 		if 'document' in ab and '.pdf' not in ab:	# there are more links than wanted (e.g to previous or next page).all relevant links start with document and do not end with .pdf (since we want to extract the name first)
-			bgh_pdf = h'ttp://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/' + ab
+			bgh_pdf = 'http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/' + ab
 			name = urllib.request.urlopen(bgh_pdf)
 			soup_name = BeautifulSoup(name, 'html.parser')
 			
@@ -65,7 +69,7 @@ for url in list_of_year_page_url:
 
 			bgh_pdf_link = bgh_pdf +'&Blank=1.pdf'
 			f = urllib.request.urlopen(bgh_pdf_link) 
-			name_final = name_box + '.pdf'
+			name_final = remove_backslash(name_box) + '.pdf'
 			file = open(name_final, 'wb')
 			file.write(f.read())
 			file.close()
