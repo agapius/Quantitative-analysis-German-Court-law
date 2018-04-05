@@ -13,6 +13,10 @@ def remove_non_ascii_1(text):
 	new_string = ''.join(i for i in text if ord(i)<128)
 	new_string = new_string.replace('.', ' ')
 	return new_string.replace('/', ' ')
+# removes backslash, so text can be a filename
+def remove_backslash(text):
+	return text.replace('/', ' ')
+
 
 ##give it an overview page and it returns the number of pages
 def get_number_of_pages(start):
@@ -27,7 +31,7 @@ def get_number_of_pages(start):
 	return Nofpages
 
 
-##get a list of years that we can loop throuh:
+##get a list of years that we can loop through:
 ###set first year
 year= 2000
 now = datetime.datetime.now()
@@ -49,26 +53,53 @@ while year <= now.year:
 	year += 1
 ###result is a list of all the pages in every year from 2000-2018
 
+failed_downloads = []
+
 #loop through all the year-pages 
 for url in list_of_year_page_url:
-	p = urllib.request.urlopen(url)
-	soup = BeautifulSoup(p, 'html.parser')
-# ab enthält alle download-links, die nicht direkt zum pdf doc führen, wenn '&Blank=1.pdf' angefügt wird, führt dieser link direkt zum pdf
-	for a in soup.find_all('a', href=True):
-		ab = str(a['href']) # the link-part of the a-tag is converted to string
-		if 'document' in ab and '.pdf' not in ab:	# there are more links than wanted (e.g to previous or next page).all relevant links start with document and do not end with .pdf (since we want to extract the name first)
-			bgh_pdf = h'ttp://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/' + ab
-			name = urllib.request.urlopen(bgh_pdf)
-			soup_name = BeautifulSoup(name, 'html.parser')
-			
-			name_box = soup_name.title.string    #I left out the remove_non_ascii because I found that this gives me cleaner results in py3
+	try:
+		p = urllib.request.urlopen(url)
+		soup = BeautifulSoup(p, 'html.parser')
+	# ab enthält alle download-links, die nicht direkt zum pdf doc führen, wenn '&Blank=1.pdf' angefügt wird, führt dieser link direkt zum pdf
+		for a in soup.find_all('a', href=True):
+			ab = str(a['href']) # the link-part of the a-tag is converted to string
+			if 'document' in ab and '.pdf' not in ab:	# there are more links than wanted (e.g to previous or next page).all relevant links start with document and do not end with .pdf (since we want to extract the name first)
+				bgh_pdf = 'http://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/' + ab
+				name = urllib.request.urlopen(bgh_pdf)
+				soup_name = BeautifulSoup(name, 'html.parser')
+				
+				name_box = soup_name.title.string    #I left out the remove_non_ascii because I found that this gives me cleaner results in py3
 
-			bgh_pdf_link = bgh_pdf +'&Blank=1.pdf'
-			f = urllib.request.urlopen(bgh_pdf_link) 
-			name_final = name_box + '.pdf'
-			file = open(name_final, 'wb')
-			file.write(f.read())
-			file.close()
+				bgh_pdf_link = bgh_pdf +'&Blank=1.pdf'
+				try:
+					f = urllib.request.urlopen(bgh_pdf_link) 
+					name_final = remove_backslash(name_box) + '.pdf'
+					file = open(name_final, 'wb')
+					file.write(f.read())
+					file.close()
+					f.close()
+				except urllib.error.URLError as j:
+					print('Failed opening page:' + str(url) + 'Trying again')
+					try: 
+						f = urllib.request.urlopen(bgh_pdf_link) 
+						name_final = remove_backslash(name_box) + '.pdf'
+						file = open(name_final, 'wb')
+						file.write(f.read())
+						file.close()
+						f.close()
+					except urllib.error.URLError as e:
+						print('Failed opening page permanently:' + str(url))
+						failed_downloads.append(str(url))
+		p.close()
+	except urllib.error.URLError as l:
+		print('Failed opening page:' + str(url))
+
+print('Downloads complete')
+if not failed_downloads:
+	print('No failed downloads')
+else:
+	print('Failed downloads:')
+	print(failed_downloads)
 
 
 
