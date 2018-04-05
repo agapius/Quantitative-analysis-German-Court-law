@@ -6,9 +6,10 @@
 	 * Get Court from the other loop/ (!get court from Aktenzeichen!) 
 	 * download 
 4. Get vorinstanzliches Urteil 
-
-
+	* später aus der Datenbank
 3. Download decision and automatically name it right
+	* Print status of download (skip to next page after loop, downloading 5 out of 76)
+	* Downloaden - wie viel Speicherplatz?
 4. Create decent folder structure for court and date
 
 ### Decide XML/TXT/JSON
@@ -18,6 +19,11 @@
 3. JSon: Straight forward, super easily queried with Python
 	* gives out pretty lean dictionary format
 	* Recommended by some people I know
+	
+### MongoResearch
+1. Was brauchen wir für ein Format um einzuspeisen?
+2. Wie speisen wir ein?
+3. Was für Queries sind möglich?
 
 ### Convert PDF to JSON
 1. Convert PDF to plain Text (less keeps formatting) and then to JSON and then tag the parts
@@ -38,16 +44,16 @@
 ### Store the documents in the JSon Format in a database (Computer/Database: MongoDB,...)
 1. MongoDB seems like a pretty good option.
 2. MongoDB has been recommended to me
-3. Other options could be considered
+3. MongoDB entschieden
 
 ### Build powerful analytics engine
 1. Think about storage options for all decisions considering query speeds
 2. Query decisions by keywords, connections, judges
 3. Query using sentiment analysis and other kinds of more creative analysis
 
-
 ### Go online
 1. Harvest creativity from others by checking their queries
 2. Implement more ways to query if demanded/possible
 3. Expand Scope
+4. Find Cloud Storage
 
