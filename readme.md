@@ -1,11 +1,11 @@
-### Access BGH-Database and download every decision
-1. Get Years (for loop)
-2. Get pages (for loop)
-3. Get EAz (for loop)
-	 * Get date, Aktenzeichen and downloadlink
-	 * Get Court from the other loop/ (!get court from Aktenzeichen!)
-	 * download
-4. Get vorinstanzliches Urteil
+### Access BGH-Database and download every decision §treasurehunt
+1. Get Years (for loop)  
+2. Get pages (for loop)  
+3. Get EAz (for loop) 
+	 * Get date, Aktenzeichen and downloadlink § treasurehunt
+	 * Get Court from the other loop/ (!get court from Aktenzeichen!) 
+	 * download 
+4. Get vorinstanzliches Urteil 
 
 
 3. Download decision and automatically name it right
