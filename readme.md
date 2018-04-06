@@ -5,6 +5,14 @@
 	 * Get date, Aktenzeichen and downloadlink
 	 * Get Court from the other loop/ (!get court from Aktenzeichen!)
 	 * download
+	 
+### Access Rectsprechung-im-Internet
+1. Get all 14k XML Files BGH
+2. Get rest of XML Files
+3. Compare to BGH Files (by AZ) - if there is stuff missing, etc
+4. Understand Tagging conventionsTags for citations (for all stuff in brackets in tags, if NJW, BGHZ,... in Brackets otherwise add to list)
+5. Convert to JSON or directly pipe it into MongoDB
+
 
 ### Access BGH-Database and download every decision §treasurehunt
 1. Get Years (for loop)  
