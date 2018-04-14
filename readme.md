@@ -5,7 +5,7 @@
 	* Unzip all (Ignore Pictures) -> full of xml
 	unzip backslash*.zip -d targetdirectory (how to extract only xml?)
 	* Go through *.xml and get list of all BGH-AZ und datum (count & compare to BGH since 2000)
-	* Find out what <dl><dt><dd> stand for. 
+	* Find out what "<dl><dt><dd>" stand for. 
 3. XML -> JSon
 	*Additional Tagging (most difficult)
 		*Zitate mit Regex 
