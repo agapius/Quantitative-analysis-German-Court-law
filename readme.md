@@ -1,27 +1,27 @@
-### Access Rechtsprechung-im-Internet §crusoe3
-1. Get all 14k XML Files BGH - DONE
-2. Get rest of XML Files -DONE
-1. XML
+### Access Rechtsprechung-im-Internet
+## Get all 14k XML Files BGH - DONE
+## Get rest of XML Files -DONE
+## XML
 	* Unzip all (Ignore Pictures) -> full of xml
 	unzip backslash*.zip -d targetdirectory (how to extract only xml?)
 	* Go through *.xml and get list of all BGH-AZ und datum (count & compare to BGH since 2000)
 	* Find out what "<dl><dt><dd>" stand for. 
-3. XML -> JSon
-	*Additional Tagging (most difficult)
-		*Zitate mit Regex 
-		*Entscheidungsträger (immer letzter/vorletzter Absatz?)
-	*Conversion
-		*Standart-Converter from the internet?
-		*Build custom?
+## XML to JSon
+	* Additional Tagging (most difficult)
+		* Zitate mit Regex 
+		* Entscheidungsträger (immer letzter/vorletzter Absatz?)
+	* Conversion
+		* Standart-Converter from the internet?
+		* Build custom?
 			*for xml-class in XML create JSon Class
 			*maybe to Excel custom and then from Excel to JSon easy thus standart is ok
-4. JSon -> Mongo 
+## JSon -> Mongo 
 	*should be super easy:
 	* "mongoimport --db Urteile --collection BGH/BVerwG,... --drop --file ~/documents/backslash*.json"
-5. Query
+## Query
 	*"Most cited author/Kommentar?"; "# of decisions(/decisions per judge"; "most §'s subject to debate"
 	*Build little query engines
-6. Online
+## Online
 	*Decide on server
 	*Export database to server
 	*Build secure website to query database on server from anywhere
