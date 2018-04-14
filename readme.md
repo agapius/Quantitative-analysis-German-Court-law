@@ -1,6 +1,6 @@
 # Access Rechtsprechung-im-Internet
 ## Get all 14k XML Files BGH - DONE
-## Get rest of XML Files -DONE
+## Get rest of 43k XML Files -DONE
 ## XML
 	1. Unzip all (Ignore Pictures) -> full of xml
 	unzip backslash*.zip -d targetdirectory (how to extract only xml?)
