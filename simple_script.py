@@ -17,3 +17,6 @@ for item in soup.find_all('item'):
 	print(name)
 	counter=counter+1
 	print(counter)
+	
+#still needs some status updates during the scan - maybe a percentage
+#still needs error-handling
