@@ -32,8 +32,8 @@
 	5. Harvest creativity from others by checking their queries
 
 
-# Access BGH-Database and download every decision §treasurehunt
-	1. Download decision and automatically name it right
+# Access BGH-Database and download every decision
+	1. Download decision and automatically name it right (treasurehunt3)
 		* Print status of download (skip to next page after loop, downloading 5 out of 76)
 		* Download compare AZ to previous download from RSI
 	2. Convert PDF to text
