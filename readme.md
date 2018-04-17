@@ -10,6 +10,8 @@
 	1. Additional Tagging (most difficult)
 		* Zitate mit Regex 
 		* Entscheidungsträger (immer letzter/vorletzter Absatz?)
+		* Problem: Man möchte möglichst umfassend alle Zitate erwischen und weiß nicht was kommt
+		* Lösung: Von hinten anfangen (Also erst ganz weit mit () fast alles einfangen und dann mit Dingen, die auf jeden fall zitate sind die Liste verkleinern also NJW,...)
 	2. Conversion
 		* Standart-Converter from the internet?
 		* Build custom?
