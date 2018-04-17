@@ -11,8 +11,8 @@
 		* Zitate mit Regex 
 		* Entscheidungsträger (immer letzter/vorletzter Absatz?)
 		* Problem: Man möchte möglichst umfassend alle Zitate erwischen und weiß nicht was kommt
-		* Lösung: Von hinten anfangen (Also erst ganz weit mit () fast alles einfangen und dann mit Dingen, die auf jeden fall zitate sind die Liste verkleinern also NJW,...)ween brackets
-		* This Regex \((.*?)\) matches anything in bet
+		* Lösung: Von hinten anfangen (Also erst ganz weit mit () fast alles einfangen und dann mit Dingen, die auf jeden fall zitate sind die Liste verkleinern also NJW,...)
+		* This Regex \((.*?)\) matches anything in between brackets
 	2. Conversion
 		* Standart-Converter from the internet?
 		* Build custom?
