@@ -22,6 +22,8 @@
 ## JSon -> Mongo 
 	1. should be super easy:
 	2. "mongoimport --db Urteile --collection BGH/BVerwG,... --drop --file ~/documents/backslash*.json"
+## CSV
+	1. AZ, Gericht, Senat, Entscheidungsdatum, Typ, Zitate (Quellentyp(Entscheidung/Kommentar[welcher Kommentar]), Autor)
 ## Query
 	1. "Most cited author/Kommentar?"; "# of decisions(/decisions per judge"; "most §'s subject to debate"
 	2. Query decisions by keywords, connections, judges
