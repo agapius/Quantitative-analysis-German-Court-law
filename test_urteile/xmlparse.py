@@ -3,6 +3,7 @@ import os
 import csv
 import re
 import xml.etree.ElementTree as ET
+from regex import *
 
 #create a list of all files in directory
 xmllist= []
@@ -14,6 +15,7 @@ for file in os.listdir():
 with open('megasheet.csv', 'w') as csvfile:
 	writer = csv.writer(csvfile, delimiter=',')
 	writer.writerow(['Doknummer', 'Aktenzeichen','Gerichtstyp', 'Spruchkörper', 'Entscheidungsdatum', 'Zitat(Kommentar)', 'Zitat(Entscheidung)', 'Zitat(Autor)'])
+
 
 	##loop through all xml files in the diectory
 	for xml in xmllist:
@@ -31,6 +33,7 @@ with open('megasheet.csv', 'w') as csvfile:
 		for p in root.iter('p'):
 			if bool(p.text):
 			###scan the paragraph with re for possible citations
+			doknrlist = doknrlist + scan_paragraph(p.text)
 			###add citations with doknrlist.append(citations)
 			print(p.text)
 
