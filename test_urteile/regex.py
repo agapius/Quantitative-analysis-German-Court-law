@@ -49,14 +49,15 @@ def scan_paragraph(string):
 # returns source, loops trough dictionary, values are RegExs 
 def find_source(string):
     
-    dict = {'NJW': '',
-    'Sodan/Ziekow': '',
-    'Meyer-Goßner': '',
-    'Schönke/Schröder': '', 
+    dictionary = {#'NJW': '(NJW)', #also matches NJW-RR PROBLEM: URTEIL VON AUFSATZ UNTERSCHEIDEN
+    'MüKo-BGB': '(MüKoBGB)|(MüKo-BGB)|(MünchKommBGB)',
+    'Sodan/Ziekow': '(blablabla)'
+    #'Meyer-Goßner': '',
+    #'Schönke/Schröder': '', 
 
     }
     
-    for key, value in dict:
+    for key, value in dictionary.items():
         if(re.search(value, string)):
             return key
     return False
