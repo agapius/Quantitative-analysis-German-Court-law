@@ -46,6 +46,26 @@ def scan_paragraph(string):
     list_of_citations = clean_list(list_of_citations)
     return list_of_citations
 
+# returns source, loops trough dictionary, values are RegExs 
+def find_source(string):
+    
+    dict = {'NJW': '',
+    'Sodan/Ziekow': '',
+    'Meyer-Goßner': '',
+    'Schönke/Schröder': '', 
+
+    }
+    
+    for key, value in dict:
+        if(re.search(value, string)):
+            return key
+    return False
+        
+
+
+
+
+
 
 # KORE303862016.xml
 # MPRE176760964.xml
