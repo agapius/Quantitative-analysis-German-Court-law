@@ -1,0 +1,8 @@
+# this is a list of all sources that will be part of our .csv-fil, every source will have its own column. The sources are part of a python dictionary in the regex.py file. The sources are sorted alphabetically. The first string is the key, the value is a RegEx.
+
+{
+'Meyer-Goßner'		: '',
+'MüKo-BGB'			: '(MüKoBGB)|(MüKo-BGB)|(MünchKommBGB)',
+'NJW'				: '(NJW)', #also matches NJW-RR PROBLEM: URTEIL VON AUFSATZ UNTERSCHEIDEN
+'Schönke/Schröder'	: '', 
+'Sodan/Ziekow'		: '(Sodan+/Ziekow)'
