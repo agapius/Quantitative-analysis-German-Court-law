@@ -51,7 +51,7 @@ def find_source(string):
     
     dictionary = {#'NJW': '(NJW)', #also matches NJW-RR PROBLEM: URTEIL VON AUFSATZ UNTERSCHEIDEN
     'MüKo-BGB': '(MüKoBGB)|(MüKo-BGB)|(MünchKommBGB)',
-    'Sodan/Ziekow': '(blablabla)'
+    'Sodan/Ziekow': '(Sodan+/Ziekow)'
     #'Meyer-Goßner': '',
     #'Schönke/Schröder': '', 
 
@@ -61,6 +61,14 @@ def find_source(string):
         if(re.search(value, string)):
             return key
     return False
+
+def listcount(list, string):
+    count = 0
+    while(string in list):
+        count += 1
+        list.remove(string)
+    return count
+
         
 
 
