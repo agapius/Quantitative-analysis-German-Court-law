@@ -6,7 +6,7 @@ import sys
 ## After first use the open will should also be citations_reduced
 
 regular_expression = sys.argv[1]
-ergebnisse = open(regular_expression, 'r+')
+ergebnisse = open(regular_expression, 'w')
 
 with open('citations.txt', 'r') as input:
 	with open('citations_reduced.txt', 'r+') as output:
