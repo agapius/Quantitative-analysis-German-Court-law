@@ -8,11 +8,14 @@ import sys
 regular_expression = sys.argv[1]
 ergebnisse = open(regular_expression, 'w')
 
-with open('citations.txt', 'r') as input:
-	with open('citations_reduced.txt', 'r+') as output:
-		for line in input:
-			if(re.search(regular_expression, line)):
-				ergebnisse.write(line)
-			else:
-				output.write(line)
+with open('citations_reduced.txt', 'r') as input:
+	lines = input.readlines()
+	input.close()
+
+with open('citations_reduced.txt', 'w') as output:
+	for line in lines:
+		if(re.search(regular_expression, line)):
+			ergebnisse.write(line)
+		else:
+			output.write(line)
 
