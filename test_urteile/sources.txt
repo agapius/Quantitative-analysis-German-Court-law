@@ -23,6 +23,7 @@
 'OLG Hamm'
 'OLG Saarbrücken'    #'OLG Saarbrücken VersR 2007, 1681, 1682 f.' -> das sollte nur das OLG matchen, nicht aber VersR
 'OLG Brandenburg'
-'OLGR Karlsruhe
-'OLG Köln
+'OLGR Karlsruhe'
+'OLG Köln'
 'OLG Frankfurt'
+}
