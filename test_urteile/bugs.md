@@ -1,6 +1,7 @@
 This file is a collection of known problems and shortcomings.  
 
-#1 Two quotes in one line 
+#1 Two quotes in one line  
+
 Wegmann in Bauer/v. Oefele, GBO, 3. Aufl., § 47 Rn. 108 und in BeckOK-BGB, 39. Edition, § 1094 Rn. 11 (1)
 
 BeckOK BGB/Hahn [Stand: 1. August 2016] § 1600 b Rn. 5 und wohl auch Staudinger/Rauscher [2011] § 1600 b Rn. 38 (1)
