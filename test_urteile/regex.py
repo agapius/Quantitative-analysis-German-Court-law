@@ -69,6 +69,13 @@ def listcount(list, string):
         list.remove(string)
     return count
 
+# prints out the percentage of the done xmls
+def print_percentage(finished, total):
+	percentage = (finished / total) * 100
+	print(str(percentage) + '% done!')
+
+
+
         
 
 

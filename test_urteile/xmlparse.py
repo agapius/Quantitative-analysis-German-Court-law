@@ -19,6 +19,9 @@ with open('megasheet.csv', 'w') as csvfile:
 
 file = open('citations.txt', 'r+')
 
+# we need the length to calculate the percentage done; same goes for counter 
+length = len(xmllist)
+count = 0
 ##loop through all xml files in the diectory
 for xml in xmllist:
 	#get data from xml general
@@ -45,6 +48,9 @@ for xml in xmllist:
 	...
 	writer.writerow([doknr, aktenzeichen, gertyp, spruchkoerper, entschdatum, 'Zitat(Kommentar)', 'Zitat(Entscheidung)', 'Zitat(Autor)'])
 	print('Sucess:' + str(xml))
+	count += 1
+	#prints out the percentage of files already parsed and included in xml
+	print_percentage(count, length)
 file.close()
 print('Done')
 	
