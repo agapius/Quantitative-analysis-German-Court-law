@@ -8,8 +8,8 @@ import sys
 output_counter = 0
 regular_expression = sys.argv[1]
 
-filename = regular_expression.replace('.', '').replace('/', '') + '.txt'
-#filename = 'bgh.txt'
+#filename = regular_expression.replace('.', '').replace('/', '') + '.txt'
+filename = 'bgh2.txt'
 ergebnisse = open(filename, 'w')
 
 with open('citations_reduced.txt', 'r') as input:
