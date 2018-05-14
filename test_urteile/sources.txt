@@ -40,4 +40,19 @@
 'Schönke/Schröder'	: '(Schönke/Schröder)', 
 'Sodan/Ziekow'		: '(Sodan+/Ziekow)', 
 'Palandt'		: '(Palandt)',
+'BeckOK-BGB'		: '(Beck[ -]?OK[ -]?BGB)'
+'BeckOK-ZPO'		: '(Beck[ -]?OK[ -]?ZPO)'
+'BeckOK-StGB' : '(Beck[ -]?OK[ -]?StGB)'
+'BeckOK-Datenschutzrecht': '(Beck[ -]?OK[ -]?Datenschutzrecht)'
+'BeckOK-StPO'		: '(Beck[ -]?OK[ -]?StPO)'
+'BeckOK-BauGB'		: '(Beck[ -]?OK[ -]?BauGB)'
+'BeckOK-FamFG'		: '(Beck[ -]?OK[ -]?FamFG)'
+'BeckOK-HGB'		: '(Beck[ -]?OK[ -]?HGB)'
+'BeckOK-WEG'		: '(Beck[ -]?OK[ -]?WEG)'
+'BeckOK-UrhR'		: '(Beck[ -]?OK[ -]?UrhR)'
+'BeckOK-AuslR'		: '(Beck[ -]?OK[ -]?AuslR)'
+'BeckOK-GG'		: '(Beck[ -]?OK[ -]?GG)'
+'BeckOK-VVG'		: '(Beck[ -]?OK[ -]?VVG)'
+'BeckOK-GBO'		: '(Beck[ -]?OK[ -]?GBO)'
+'BeckOK-VwVfG'		: '(Beck[ -]?OK[ -]?VwVfG)'
 }
