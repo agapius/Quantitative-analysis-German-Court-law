@@ -22,11 +22,10 @@
 'OLG Naumburg' : '(OLG|Olg).*(Naumburg)'
 'OLG Bamberg' : '(OLG|Olg).*(Bamberg)'
 'OLG Jena' : '(OLG|Olg).*(Jena)'
-'OLG Hamburg' : '(OLG|Olg).*(Hamburg)' ##Ober Landes Gericht oder OLGE... etc. was Du noch drinnen hattest, wird so nie benutzt
+'OLG Hamburg' : '(OLG|Olg).*(Hamburg)' 
 'OLG Rostock' : '(OLG|Olg).*(Rostock)'
 'OLG Zweibrücken' : '(OLG|Olg).*(Zweibrücken)'
 'OLG Braunschweig' : '(OLG|Olg).*(Braunschweig)'
 'OLG Saarbrücken' : '(OLG|Olg).*(Saarbrücken)'
 'OLG Bremen' : '(OLG|Olg).*(Bremen)'
-
 }
