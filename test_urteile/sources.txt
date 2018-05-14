@@ -1,6 +1,9 @@
 # this is a list of all sources that will be part of our .csv-fil, every source will have its own column. The sources are part of a python dictionary in the regex.py file. The sources are sorted alphabetically. The first string is the key, the value is a RegEx.
 
-{
+{'OLG Hamburg':	'(OLG Hamburg)|(Hanseatisches Oberlandesgericht Hamburg)|(OLGR Hamburg)'
+'LG Hamburg': '(LG Hamburg)|(Landgericht(s)? Hamburg)' 
+'AG Hamburg': '(AG Hamburg)'
+'Staudinger': '(Staudinger)',
 
 
 }
