@@ -5,7 +5,7 @@
 'AG Hamburg': '(AG Hamburg)'
 'Staudinger': '(Staudinger)',
 'OLG Hamm' : '(OLG|Olg).*(Hamm)'
-'OLG München' : '(OLG|Olg).*(München)'
+'OLG München' : '((OLG|Olg).*(München))|(BayObLG))'
 'OLG Stuttgart' : '(OLG|Olg).*(Stuttgart)'
 'OLG Frankfurt' : '(OLG|Olg).*(Frankfurt)'
 'OLG Düsseldorf' : '(OLG|Olg).*(Düsseldorf)'
