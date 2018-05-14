@@ -1,9 +1,32 @@
 # this is a list of all sources that will be part of our .csv-fil, every source will have its own column. The sources are part of a python dictionary in the regex.py file. The sources are sorted alphabetically. The first string is the key, the value is a RegEx.
 
-{'OLG Hamburg':	'(OLG Hamburg)|(Hanseatisches Oberlandesgericht Hamburg)|(OLGR Hamburg)'
+{
 'LG Hamburg': '(LG Hamburg)|(Landgericht(s)? Hamburg)' 
 'AG Hamburg': '(AG Hamburg)'
 'Staudinger': '(Staudinger)',
-
+'OLG Hamm' : '(OLG|Olg).*(Hamm)'
+'OLG München' : '(OLG|Olg).*(München)'
+'OLG Stuttgart' : '(OLG|Olg).*(Stuttgart)'
+'OLG Frankfurt' : '(OLG|Olg).*(Frankfurt)'
+'OLG Düsseldorf' : '(OLG|Olg).*(Düsseldorf)'
+'OLG Karlsruhe' : '(OLG|Olg).*(Karlsruhe)'
+'OLG Dresden' : '(OLG|Olg).*(Dresden)'
+'OLG Köln' : '(OLG|Olg).*(Köln)'
+'OLG Celle' : '(OLG|Olg).*(Celle)'
+'OLG Berlin' : '(OLG|Olg).*(Berlin)'
+'OLG Nürnberg' : '(OLG|Olg).*(Nürnberg)'
+'OLG Schleswig' : '(OLG|Olg).*(Schleswig)'
+'OLG Koblenz' : '(OLG|Olg).*(Koblenz)'
+'OLG Brandenburg' : '(OLG|Olg).*(Brandenburg)'
+'OLG Oldenburg' : '(OLG|Olg).*(Oldenburg)'
+'OLG Naumburg' : '(OLG|Olg).*(Naumburg)'
+'OLG Bamberg' : '(OLG|Olg).*(Bamberg)'
+'OLG Jena' : '(OLG|Olg).*(Jena)'
+'OLG Hamburg' : '(OLG|Olg).*(Hamburg)'
+'OLG Rostock' : '(OLG|Olg).*(Rostock)'
+'OLG Zweibrücken' : '(OLG|Olg).*(Zweibrücken)'
+'OLG Braunschweig' : '(OLG|Olg).*(Braunschweig)'
+'OLG Saarbrücken' : '(OLG|Olg).*(Saarbrücken)'
+'OLG Bremen' : '(OLG|Olg).*(Bremen)'
 
 }
