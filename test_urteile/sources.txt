@@ -1,29 +1,6 @@
 # this is a list of all sources that will be part of our .csv-fil, every source will have its own column. The sources are part of a python dictionary in the regex.py file. The sources are sorted alphabetically. The first string is the key, the value is a RegEx.
 
 {
-'Meyer-Goßner'		: '',
-'MüKo-BGB'			: '(MüKo BGB)|(MüKoBGB)|(MüKo-BGB)|(MünchKommBGB)|(MünchKomm-BGB)',
-'MüKo-ZPO'			: '(MüKoZPO)|(MüKo-ZPO)|(MünchKommZPO)|(MünchKomm-ZPO)||(MünchKomm ZPO)',
-'MüKo-GmbHG'		: '(MünchKommGmbHG)|(MüKo-GmbHG)|(MüKoGmbHG)|(MünchKomm-GmbHG)'
-'MüKo-InsO'			: '(MüKoInsO)|(MüKo-InsO)|(MünchKommInsO)|(MünchKomm-InsO)',
-'NJW'				: '(NJW)', #also matches NJW-RR PROBLEM: URTEIL VON AUFSATZ UNTERSCHEIDEN
-'Schönke/Schröder'	: '(Schönke/Schröder)', 
-'Sodan/Ziekow'		: '(Sodan+/Ziekow)'
-'NStZ'				: 						# auch hier urteil von zeitschrift unterscheiden
-'Staudinger'		: '(Staudinger)'
-'Palandt'			: '(Palandt)'
-'Prütting/Wegen/Weinreich/Medicus'
-'BeckOK-BGB'		: '(Beck-OK-BGB)|(BeckOK-BGB)|(Beck OK BGB)|(BeckOK BGB)'
-'BeckOK-ZPO'		: '(BeckOK-ZPO)|(BeckOK ZPO)|(Beck OK ZPO)'
-'Jaeger'			: 
 
 
-'OLG München'
-'OLG Düsseldorf'
-'OLG Hamm'
-'OLG Saarbrücken'    #'OLG Saarbrücken VersR 2007, 1681, 1682 f.' -> das sollte nur das OLG matchen, nicht aber VersR
-'OLG Brandenburg'
-'OLGR Karlsruhe'
-'OLG Köln'
-'OLG Frankfurt'
 }
