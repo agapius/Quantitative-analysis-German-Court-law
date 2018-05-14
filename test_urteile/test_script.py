@@ -7,7 +7,10 @@ import sys
 
 output_counter = 0
 regular_expression = sys.argv[1]
-ergebnisse = open(regular_expression, 'w')
+
+filename = regular_expression.replace('.', '').replace('/', '') + '.txt'
+
+ergebnisse = open(filename, 'w')
 
 with open('citations_reduced.txt', 'r') as input:
 	lines = input.readlines()
