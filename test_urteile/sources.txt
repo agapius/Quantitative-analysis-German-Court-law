@@ -36,4 +36,5 @@
 'MüKo-ZPO': '(MüKo-?ZPO)|(MünchKommZPO)|(MünchKomm-ZPO)|(MünchKomm ZPO)',
 'MüKo-GmbHG': '(MünchKommGmbHG)|(MüKo-?GmbHG)|(MünchKomm-GmbHG)'
 'MüKo-InsO'	: '|(MüKo-?InsO)|(MünchKommInsO)|(MünchKomm-InsO)',
+'Meyer-Goßner': '^(?!.*Festschrift.*Meyer-Goßner).*(Meyer-Goßner)','
 }
