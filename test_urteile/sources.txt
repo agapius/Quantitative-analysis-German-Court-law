@@ -22,10 +22,18 @@
 'OLG Naumburg' : '(OLG|Olg).*(Naumburg)'
 'OLG Bamberg' : '(OLG|Olg).*(Bamberg)'
 'OLG Jena' : '(OLG|Olg).*(Jena)'
-'OLG Hamburg' : '(OLG|Olg).*(Hamburg)' 
+'OLG Hamburg' : '(OLG|Olg).*(Hamburg)|Hanseatisches Oberlandesgericht Hamburg' 
 'OLG Rostock' : '(OLG|Olg).*(Rostock)'
 'OLG Zweibrücken' : '(OLG|Olg).*(Zweibrücken)'
 'OLG Braunschweig' : '(OLG|Olg).*(Braunschweig)'
 'OLG Saarbrücken' : '(OLG|Olg).*(Saarbrücken)'
 'OLG Bremen' : '(OLG|Olg).*(Bremen)'
+}
+
+{
+'Staudinger': '(Staudinger)',
+'MüKo-BGB': '(MüKo BGB)|(MüKo-?BGB)|(MünchKommBGB)|(MünchKomm-BGB)',
+'MüKo-ZPO': '(MüKo-?ZPO)|(MünchKommZPO)|(MünchKomm-ZPO)|(MünchKomm ZPO)',
+'MüKo-GmbHG': '(MünchKommGmbHG)|(MüKo-?GmbHG)|(MünchKomm-GmbHG)'
+'MüKo-InsO'	: '|(MüKo-?InsO)|(MünchKommInsO)|(MünchKomm-InsO)',
 }
