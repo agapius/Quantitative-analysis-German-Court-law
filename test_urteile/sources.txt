@@ -48,7 +48,7 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 'MüKo-ZPO': '(MüKo-?ZPO)|(MünchKomm.?ZPO)|(MünchKomm-ZPO)|(MünchKomm ZPO)',
 'MüKo-GmbHG': '(MünchKommGmbHG)|(MüKo-?GmbHG)|(MünchKomm-GmbHG)'
 'MüKo-InsO'	: '(MüKo[ -]?InsO)|(MünchKomm[ -]?InsO)',
-'MüKo-StGB': 'MüKo[ -]?StGB|MünchKomm[ -]?StGB|MüKomm-StGB'
+'MüKo-StGB': 'Mü[kK]o[ -]?StGB|MünchKomm[ -]?StGB|MüKomm-StGB'
 'MüKo-StPO': 'MüKo[ -]?StPO|MünchKomm[ -]?StPO'
 'MüKo-HGB'	: '(MüKo[ -.]?HGB)|(MünchKomm[ -.]?HGB)'
 'Meyer-Goßner': '^(?!.*Festschrift.*Meyer-Goßner).*(Meyer-Goßner)',
