@@ -44,10 +44,12 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 
 {
 'Staudinger': '(Staudinger)',
-'MüKo-BGB': '(MüKo BGB)|(MüKo-?BGB)|(MünchKommBGB)|(MünchKomm-BGB)',
+'MüKo-BGB': '(MüKo BGB)|(Mü[kK]o-?BGB)|(MünchKommBGB)|(MünchKomm-BGB)',
 'MüKo-ZPO': '(MüKo-?ZPO)|(MünchKommZPO)|(MünchKomm-ZPO)|(MünchKomm ZPO)',
 'MüKo-GmbHG': '(MünchKommGmbHG)|(MüKo-?GmbHG)|(MünchKomm-GmbHG)'
 'MüKo-InsO'	: '|(MüKo-?InsO)|(MünchKommInsO)|(MünchKomm-InsO)',
+'MüKo-StGB': 'MüKo[ -]?StGB|MünchKomm[ -]?StGB'
+'MüKo-StPO': 'MüKo[ -]?StPO|MünchKomm[ -]?StPO'
 'Meyer-Goßner': '^(?!.*Festschrift.*Meyer-Goßner).*(Meyer-Goßner)',
 'Schönke/Schröder'	: '(Schönke/Schröder)', 
 'Sodan/Ziekow'		: '(Sodan+/Ziekow)', 
