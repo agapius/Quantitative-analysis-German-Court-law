@@ -74,4 +74,5 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 'jurisPK-BGB': 'jurisPK[ -/]?BGB|juris Praxiskommentar BGB'
 'Fischer': 'Fischer[ -/,]?[ ]?StGB|(Fischer, aaO)'
 'Thomas/Putzo': 'Thomas/Putzo'
+'Musielak-ZPO': 'Musielak(?=.*(ZPO)|.*(aaO))'
 }
