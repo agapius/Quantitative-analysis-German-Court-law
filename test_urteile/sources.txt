@@ -80,4 +80,11 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 'Zöller-ZPO': 'Zöller(?=.*ZPO)'
 'Baumbach-ZPO': 'Baumbach(?=.*ZPO)|Baumbach/(Lauterbach/)?(Albers/)?Hartmann'
 'Baumbach-GmbH': 'Baumbach(?=.*GmbH|/Hueck)'
+'Baumbach-HGB': 'Baumbach(?=.*HGB|/Hopt)'
+'Wieczorek-ZPO': 'Wieczorek(?=/Schütze|.*ZPO)'
+'Prütting-ZPO': 'Prütting(?=/Gehrlein|.*ZPO)'
+'Hk-ZPO': 'H[kK][ -]?ZPO'
+'Hk-InsO': 'H[kK][ -]?InsO'
+'Stein/Jonas-ZPO': 'Stein(?=/Jonas|.*ZPO)'
+'Saenger-ZPO': 'Saenger(?=.*ZPO)'
 }
