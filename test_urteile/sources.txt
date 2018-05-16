@@ -29,9 +29,9 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 'OLG Nürnberg' : 	'(OLG|Olg).*(Nürnberg)'
 'OLG Schleswig' : 	'(OLG|Olg).*(Schleswig)'
 'OLG Koblenz' : 	'(OLG|Olg).*(Koblenz)'
-'OLG Brandenburg' : '(OLG|Olg).*(Brandenburg)'
+'OLG Brandenburg' : '(OLG|Olg).*(Brandenburg)|Brandenburgisches OLG'
 'OLG Oldenburg' : 	'(OLG|Olg).*(Oldenburg)'
-'OLG Naumburg' : 	'(OLG|Olg).*(Naumburg)'
+'OLG Naumburg' : 	'(OLG|Olg).*(Naumburg)|OLG (des Landes)?(?=.*Sachsen-Anhalt)'
 'OLG Bamberg' : 	'(OLG|Olg).*(Bamberg)'
 'OLG Jena' : 		'(OLG|Olg).*(Jena)'
 'OLG Hamburg' : 	'(OLG|Olg).*(Hamburg)|Hanseatisches Oberlandesgericht Hamburg' 
@@ -41,11 +41,12 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 'OLG Saarbrücken': 	'(OLG|Olg).*(Saarbrücken)'
 'OLG Bremen' : 		'(OLG|Olg).*(Bremen)'
 'KG': 				'^ ?KG[, ]|KG(?=.*Berlin)|Kammergericht|(?!=Co.) KG, '
+'OLG Saarland':		'Saarländisches OLG|OLG Saarland'
 }
 
 {
 'Staudinger': '(Staudinger)',
-'MüKo-BGB': '(MüKo BGB)|(Mü[kK]o-?BGB)|(MünchKomm.?BGB)|(MünchKomm-BGB)|(MüKomm-BGB)|MünchKomm(?=.*BGB)|MüKo(?=.*BGB)',
+'MüKo-BGB': '(MüKo BGB)|(Mü[kK]o-?BGB)|(MünchKomm.?BGB)|(MünchKomm-BGB)|(MüKomm-BGB)|MünchKomm(?=.*BGB)|MüKo(?=.*BGB)|Münchener Kommentar zum BGB',
 'MüKo-ZPO': '(MüKo[ -/]?ZPO)|(MünchKomm.?ZPO)|(MünchKomm-ZPO)|(MünchKomm[ -/.]?ZPO)|MünchKomm(?=.*ZPO)',
 'MüKo-GmbHG': '(MünchKommGmbHG)|(MüKo-?GmbHG)|(MünchKomm-GmbHG)'
 'MüKo-InsO'	: '(MüKo[ -]?InsO)|(MünchKomm[ -]?InsO)',
@@ -78,7 +79,7 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 'Musielak-ZPO': 'Musielak(?=.*(ZPO)|.*(aaO))'
 'Musielak-FamG': 'Musielak(?=.*FamFG)'
 'Leipziger Kommentar': 'Leipziger Kommentar'
-'Zöller-ZPO': 'Zöller(?=.*ZPO)'
+'Zöller-ZPO': 'Zöller(?=.*ZPO)|Zöller/Heßler|Zöller/Vollkommer|Zöller/Stöber|Zöller/Greger|Zöller/Geimer|Zöller/Philippi'
 'Baumbach-ZPO': 'Baumbach(?=.*ZPO)|Baumbach/(Lauterbach/)?(Albers/)?Hartmann'
 'Baumbach-GmbH': 'Baumbach(?=.*GmbH|/Hueck)'
 'Baumbach-HGB': 'Baumbach(?=.*HGB|/Hopt)'
@@ -87,5 +88,6 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 'Hk-ZPO': 'H[kK][ -]?ZPO'
 'Hk-InsO': 'H[kK][ -]?InsO'
 'Stein/Jonas-ZPO': 'Stein(?=/Jonas|.*ZPO)'
-'Saenger-ZPO': 'Saenger(?=.*ZPO)'
+'Saenger-ZPO': 'Saenger(?=.*ZPO)|Saenger/Saenger'
+'Zimmermann-ZPO': 'Zimmermann(?=.*ZPO)',
 }
