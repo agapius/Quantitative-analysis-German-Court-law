@@ -45,8 +45,8 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 
 {
 'Staudinger': '(Staudinger)',
-'MüKo-BGB': '(MüKo BGB)|(Mü[kK]o-?BGB)|(MünchKomm.?BGB)|(MünchKomm-BGB)|(MüKomm-BGB)',
-'MüKo-ZPO': '(MüKo[ -/]?ZPO)|(MünchKomm.?ZPO)|(MünchKomm-ZPO)|(MünchKomm,? ZPO)',
+'MüKo-BGB': '(MüKo BGB)|(Mü[kK]o-?BGB)|(MünchKomm.?BGB)|(MünchKomm-BGB)|(MüKomm-BGB)|MünchKomm(?=.*BGB)|MüKo(?=.*BGB)',
+'MüKo-ZPO': '(MüKo[ -/]?ZPO)|(MünchKomm.?ZPO)|(MünchKomm-ZPO)|(MünchKomm[ -/.]?ZPO)|MünchKomm(?=.*ZPO)',
 'MüKo-GmbHG': '(MünchKommGmbHG)|(MüKo-?GmbHG)|(MünchKomm-GmbHG)'
 'MüKo-InsO'	: '(MüKo[ -]?InsO)|(MünchKomm[ -]?InsO)',
 'MüKo-StGB': 'Mü[kK]o[ -/]?StGB|MünchKomm[ -]?StGB|MüKomm-StGB'
@@ -58,7 +58,7 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 'Sodan/Ziekow'		: '(Sodan+/Ziekow)', 
 'Palandt'		: '(Palandt)',
 'BeckOK-BGB'		: '(Beck[ -]?OK[ -]?BGB)'
-'BeckOK-ZPO'		: '(Beck[ -]?OK[ -]?ZPO)|Vorwerk(?=.*ZPO)'
+'BeckOK-ZPO'		: '(Beck[ -]?OK[ -]?ZPO)|Vorwerk(?=.*ZPO)|Beck'scher Online-Kommentar ZPO'
 'BeckOK-StGB' : '(Beck[ -]?OK[ -]?StGB)'
 'BeckOK-Datenschutzrecht': '(Beck[ -]?OK[ -]?Datenschutzrecht)'
 'BeckOK-StPO'		: '(Beck[ -]?OK[ -]?StPO)'
