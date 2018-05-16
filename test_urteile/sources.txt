@@ -1,15 +1,8 @@
 # this is a list of all sources that will be part of our .csv-fil, every source will have its own column. The sources are part of a python dictionary in the regex.py file. The sources are sorted alphabetically. The first string is the key, the value is a RegEx.
 
-pattern_AZ_Strafsachen = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(ZR|ZA|ZB|ZR(Ü)|BLw|LwZR|LwZA|LwZB|GSZ|AR(VZ)|ARZ)
-
-pattern_AZ_Zivilsachen = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(StR|StB|GSSt|AR(VS)|AR(Vollz)|ARs|ARP|BJs|StE|BGs|AK|BGns|B)
-
-pattern_AZ_ZivStr = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(VGS|VRG)
-
-pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(AR|AnwZ|AnwZ(P)|AnwZ(B)|AnwZ(Brfg)|AnwSt|AnwSt(R|B)|KZR|KZA|KZB|KVR|KVZ|KRB|AR(Kart)|EnZR|EnZA|EnZB|EnVR|EnVZ|EnRB|AR(Enw)|NotZ|NotZ(Brfg)|NotSt(B)|NotSt(Brfg)|PatAnwZ|PatAnwSt(R|B)|RiZ|RiZ(R|B)|RiSt|RiSt(R|B)|AR(Ri)|StbSt(R|B)|WpSt(R|B))
 
 {
-'BGH':				'((((B|b)eschl(uss|üsse) vom)|((u|U)rtei(l|le) (vom|v.)).*(I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )((ZR|ZA|ZB|ZR(Ü)|BLw|LwZR|LwZA|LwZB|GSZ|AR(VZ)|ARZ)|(StR|StB|GSSt|AR(VS)|AR(Vollz)|ARs|ARP|BJs|StE|BGs|AK|BGns|B)|(VGS|VRG)|(AR|AnwZ|AnwZ(P)|AnwZ(B)|AnwZ(Brfg)|AnwSt|AnwSt(R|B)|KZR|KZA|KZB|KVR|KVZ|KRB|AR(Kart)|EnZR|EnZA|EnZB|EnVR|EnVZ|EnRB|AR(Enw)|NotZ|NotZ(Brfg)|NotSt(B)|NotSt(Brfg)|PatAnwZ|PatAnwSt(R|B)|RiZ|RiZ(R|B)|RiSt|RiSt(R|B)|AR(Ri)|StbSt(R|B)|WpSt(R|B))))|(BGH)'
+'BGH':				'((I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(ZR|ZA|ZB|ZR(Ü)|BLw|LwZR|LwZA|LwZB|GSZ|AR(VZ)|ARZ|StR|StB|GSSt|AR(VS)|AR(Vollz)|ARs|ARP|BJs|StE|BGs|AK|BGns|B|(VGS|VRG)|AR|AnwZ|AnwZ(P)|AnwZ(B)|AnwZ(Brfg)|AnwSt|AnwSt(R|B)|KZR|KZA|KZB|KVR|KVZ|KRB|AR(Kart)|EnZR|EnZA|EnZB|EnVR|EnVZ|EnRB|AR(Enw)|NotZ|NotZ(Brfg)|NotSt(B)|NotSt(Brfg)|PatAnwZ|PatAnwSt(R|B)|RiZ|RiZ(R|B)|RiSt|RiSt(R|B)|AR(Ri)|StbSt(R|B)|WpSt(R|B)))|(BGH)'
 
 'BVerfG':			'(BVerfG)|(Bundesverfassungsgericht )'
 
