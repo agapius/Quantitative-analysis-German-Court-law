@@ -25,7 +25,7 @@ with open('megasheet.csv', 'w') as csvfile:
 		'Sodan/Ziekow', 'Staudinger', 'Palandt', 'jurisPK-BGB', 'BeckOK-BGB', 'BeckOK-ZPO', 'BeckOK-StGB',
 		'BeckOK-Datenschutzrecht', 'BeckOK-StPO', 'BeckOK-BauGB', 'BeckOK-FamFG', 'BeckOK-HGB', 'BeckOK-WEG',
 		'BeckOK-UrhR', 'BeckOK-AuslR', 'BeckOK-GG', 'BeckOK-VVG', 'BeckOK-GBO', 'BeckOK-VwVfG',
-		'Meyer-Goßner', 'Fischer', 'Leipziger Kommentar', 'Schönke/Schröder', 'Thomas/Putzo', 'Musielak-ZPO'
+		'Meyer-Goßner', 'Fischer', 'Leipziger Kommentar', 'Schönke/Schröder', 'Thomas/Putzo', 'Musielak-ZPO',
 		'Zöller-ZPO', 'Baumbach-ZPO', 'Wieczorek-ZPO', 'Prütting-ZPO', 'Hk-ZPO', 'Stein/Jonas-ZPO',
 		'Saenger-ZPO', 'Zimmermann-ZPO', 'Musielak-FamG', 'Baumbach-GmbH', 'Baumbach-HGB', 'Hk-InsO'])
 
