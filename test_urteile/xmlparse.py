@@ -87,7 +87,55 @@ for xml in xmllist:
 	OLG_Saarbrücken = listcount(doknrlist, 'OLG Saarbrücken')
 	KG = listcount(doknrlist, 'KG')
 	OLG_Saarland = listcount(doknrlist, 'OLG Saarland')
-	MüKo-BGB = listcount(doknrlist, 'MüKo-BGB')
+	MüKo_BGB = listcount(doknrlist, 'MüKo-BGB')
+	MüKo_ZPO = listcount(doknrlist, 'MüKo-ZPO')
+	MüKo_GmbHG = listcount(doknrlist, 'MüKo-GmbHG')
+	MüKo_InsO = listcount(doknrlist, 'MüKo-InsO')
+	MüKo_StGB = listcount(doknrlist, 'MüKo-StGB')
+	MüKo_StPO = listcount(doknrlist, 'MüKo-StPO')
+	MüKo_HGB = listcount(doknrlist, 'MüKo-HGB')
+	MüKo_AktG = listcount(doknrlist, 'MüKo-AktG')
+	Sodan_Ziekow = listcount(doknrlist, 'Sodan/Ziekow')
+	Staudinger = listcount(doknrlist, 'Staudinger')
+	Palandt = listcount(doknrlist, 'Palandt')
+	jurisPK_BGB = listcount(doknrlist, 'jurisPK-BGB')
+	Staudinger = listcount(doknrlist, 'Staudinger')
+	
+	BeckOK_BGB = listcount(doknrlist, 'BeckOK-BGB')
+	BeckOK_ZPO = listcount(doknrlist, 'BeckOK-ZPO')
+	BeckOK_StGB = listcount(doknrlist, 'BeckOK-StGB')
+	BeckOK_Datenschutzrecht = listcount(doknrlist, 'BeckOK-Datenschutzrecht')
+	BeckOK_StPO = listcount(doknrlist, 'BeckOK-StPO')
+	BeckOK_BauGB = listcount(doknrlist, 'BeckOK-BauGB')
+	BeckOK_FamFG = listcount(doknrlist, 'BeckOK-FamFG')
+	BeckOK_HGB = listcount(doknrlist, 'BeckOK-HGB')
+	BeckOK_WEG = listcount(doknrlist, 'BeckOK-WEG')
+	BeckOK_UrhR = listcount(doknrlist, 'BeckOK-UrhR')
+	BeckOK_AuslR = listcount(doknrlist, 'BeckOK-AuslR')
+	BeckOK_GG = listcount(doknrlist, 'BeckOK-GG')
+	BeckOK_VVG = listcount(doknrlist, 'BeckOK-VVG')
+	BeckOK_GBO = listcount(doknrlist, 'BeckOK-GBO')
+
+	BeckOK_VwVfG = listcount(doknrlist, 'BeckOK-VwVfG')
+	Meyer_Goßner = listcount(doknrlist, 'Meyer-Goßner')
+	Fischer = listcount(doknrlist, 'Fischer')
+	Leipziger_Kommentar = listcount(doknrlist, 'Leipziger Kommentar')
+	Schönke_Schröder = listcount(doknrlist, 'Schönke/Schröder')
+	Musielak_ZPO = listcount(doknrlist, 'Musielak-ZPO')
+	Zöller_ZPO = listcount(doknrlist, 'Zöller-ZPO')
+	Baumbach_ZPO = listcount(doknrlist, 'Baumbach-ZPO')
+	Wieczorek_ZPO = listcount(doknrlist, 'Wieczorek-ZPO')
+
+	Prütting_ZPO = listcount(doknrlist, 'Prütting-ZPO')
+	Hk_ZPO = listcount(doknrlist, 'Hk-ZPO')
+	Stein_Jonas_ZPO = listcount(doknrlist, 'Stein/Jonas-ZPO')
+	Saenger_ZPO = listcount(doknrlist, 'Saenger-ZPO')
+	Zimmermann_ZPO = listcount(doknrlist, 'Zimmermann-ZPO')
+	Musielak_FamG = listcount(doknrlist, 'Musielak-FamG')
+
+	Baumbach_GmbH = listcount(doknrlist, 'Baumbach-GmbH')
+	Baumbach_HGB = listcount(doknrlist, 'Baumbach-HGB')
+	Hk_InsO = listcount(doknrlist, 'Hk-InsO')
 
 
 
@@ -96,14 +144,14 @@ for xml in xmllist:
 		OLG_Frankfurt, OLG_Düsseldorf, OLG_Karlsruhe, OLG_Dresden, OLG_Köln, OLG_Celle,
 		OLG_Berlin, OLG_Nürnberg, OLG_Schleswig, OLG_Koblenz, OLG_Brandenburg, OLG_Oldenburg,
 		OLG_Naumburg, OLG_Bamberg, OLG_Jena, OLG_Hamburg, OLG_Rostock, OLG_Zweibrücken,
-		OLG_Braunschweig, OLG_Saarbrücken, OLG_Bremen, KG, OLG_Saarland, MüKo-BGB,
-		'MüKo-ZPO', 'MüKo-GmbHG', 'MüKo-InsO', 'MüKo-StGB', 'MüKo-StPO', 'MüKo-HGB', 'MüKo-AktG',
-		'Sodan/Ziekow', 'Staudinger', 'Palandt', 'jurisPK-BGB', 'BeckOK-BGB', 'BeckOK-ZPO', 'BeckOK-StGB',
-		'BeckOK-Datenschutzrecht', 'BeckOK-StPO', 'BeckOK-BauGB', 'BeckOK-FamFG', 'BeckOK-HGB', 'BeckOK-WEG',
-		'BeckOK-UrhR', 'BeckOK-AuslR', 'BeckOK-GG', 'BeckOK-VVG', 'BeckOK-GBO', 'BeckOK-VwVfG',
-		'Meyer-Goßner', 'Fischer', 'Leipziger Kommentar', 'Schönke/Schröder', 'Thomas/Putzo', 'Musielak-ZPO'
-		'Zöller-ZPO', 'Baumbach-ZPO', 'Wieczorek-ZPO', 'Prütting-ZPO', 'Hk-ZPO', 'Stein/Jonas-ZPO',
-		'Saenger-ZPO', 'Zimmermann-ZPO', 'Musielak-FamG', 'Baumbach-GmbH', 'Baumbach-HGB', 'Hk-InsO'])
+		OLG_Braunschweig, OLG_Saarbrücken, OLG_Bremen, KG, OLG_Saarland, MüKo_BGB,
+		MüKo_ZPO, MüKo_GmbHG, MüKo_InsO, MüKo_StGB, MüKo_StPO, MüKo_HGB, MüKo_AktG,
+		Sodan_Ziekow, Staudinger, Palandt, jurisPK_BGB, BeckOK_BGB, BeckOK_ZPO, BeckOK_StGB,
+		BeckOK_Datenschutzrecht, BeckOK_StPO, BeckOK_BauGB, BeckOK_FamFG, BeckOK_HGB, BeckOK_WEG,
+		BeckOK_UrhR, BeckOK_AuslR, BeckOK_GG, BeckOK_VVG, BeckOK_GBO, BeckOK_VwVfG,
+		Meyer_Goßner, Fischer, Leipziger_Kommentar, Schönke_Schröder, Thomas_Putzo, Musielak_ZPO,
+		Zöller_ZPO, Baumbach_ZPO, Wieczorek_ZPO, Prütting_ZPO, Hk_ZPO, Stein_Jonas_ZPO,
+		Saenger_ZPO, Zimmermann_ZPO, Musielak_FamG, Baumbach_GmbH, Baumbach_HGB, Hk_InsO])
 	print('Sucess:' + str(xml))
 	count += 1
 	#prints out the percentage of files already parsed and included in xml
