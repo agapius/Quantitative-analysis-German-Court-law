@@ -40,7 +40,7 @@ pattern_AZ_sonstige = (I |II |III |IV |V |VI |VII |VIII |IX |X |XI |XII |XIV )(A
 'OLG Braunschweig':	'(OLG|Olg).*(Braunschweig)'
 'OLG Saarbrücken': 	'(OLG|Olg).*(Saarbrücken)'
 'OLG Bremen' : 		'(OLG|Olg).*(Bremen)'
-'KG': 				'^ ?KG[, ]|KG(?=.*Berlin)|Kammergericht| KG, '
+'KG': 				'^ ?KG[, ]|KG(?=.*Berlin)|Kammergericht|(?!=Co.) KG, '
 }
 
 {
