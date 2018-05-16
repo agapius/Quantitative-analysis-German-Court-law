@@ -40,9 +40,6 @@ def scan_paragraph(string):
     for string in list_of_brackets:
         if(';' in string):
             split = string.split(';')
-            split = split.split('und')
-            split = split.split('bestätigt')
-            split = split.split('Hinweis')
             list_of_citations = list_of_citations + split
         else:
             list_of_citations.append(string)
@@ -59,7 +56,7 @@ def find_source(string):
 
     'LG Hamburg':       '(LG Hamburg)|(Landgericht(s)? Hamburg)', 
     'AG Hamburg':       '(AG Hamburg)',
-    'Staudinger':       '(Staudinger)',
+
     'OLG Hamm' :        '(OLG|Olg).*(Hamm)',
     'OLG München' :     '((OLG|Olg).*(München))|(BayObLG)',
     'OLG Stuttgart' :   '(OLG|Olg).*(Stuttgart)',
@@ -99,7 +96,7 @@ def find_source(string):
     
    
     'Sodan/Ziekow'      : '(Sodan+/Ziekow)', 
-    
+
     'Staudinger': '(Staudinger)',
     'Palandt'       : '(Palandt)',
     'jurisPK-BGB': 'jurisPK[ -/]?BGB|juris Praxiskommentar BGB',
