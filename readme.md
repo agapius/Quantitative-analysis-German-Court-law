@@ -3,7 +3,7 @@
 ## Unzip the files
 	1. Unziper.py unzips all zip files that are KORE*.zip
 	2. Unzip other files and ignore pictures etc
-	JURE 	KORE BGH
+	JURE 	KORE(zivilsenat) BGH(Strafsenat)
 	KARE 	BAG
 	KSRE 	BSG
 	STRE 	BFH
