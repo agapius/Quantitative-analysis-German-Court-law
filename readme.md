@@ -11,6 +11,10 @@
 ## Tagging
 	1. Load citations_reduced.txt into sublime
 	2. Create Regex for remaining source
+		*create a remainder file that collects all the citations that have not yet been tagged
+		*create a strng compare function for the citations in the "not-yet-tagges"-file and compare all
+		*function to group somewhat similar strings and write a regex accordingly
+		*let the community review and approve suggested regexes (might be overengeneered but AI, yey!)
 	3. Run test_script.py with this Regex
 		* Outputs a list of all results captured by Regex
 		* Reduces citations_reduced.txt by everything the new Regex captures
