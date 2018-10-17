@@ -1,5 +1,6 @@
 # Access Rechtsprechung-im-Internet
-## Update the Zip-Files automatically
+## ToDo
+	1. Use Regex Expressions to create an easy Python Module for future law researchers
 ## Unzip the files
 	1. Unziper.py unzips all zip files that are KORE*.zip
 	2. Unzip other files and ignore pictures etc
