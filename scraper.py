@@ -72,3 +72,20 @@ def download_decisions(url_list):
 			print('Failed opening page:' + str(url))
 		print("Page {} out of {} is done.".format(count, total_pages))
 	print('Downloads completed')
+	
+	
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
